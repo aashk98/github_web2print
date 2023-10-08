@@ -1,0 +1,86 @@
+body {
+    border: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  p {
+    text-align: center;
+    display: block;
+    font-size: 68px;
+    position: relative;
+
+  }
+  
+ 
+  
+  .box {
+    height: 175px;
+    width: 100%;
+    background-color: dodgerblue;
+    display:inline-block;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  
+  .box2 {
+    height: 375px;
+    width: 700px;
+    background-color: rgb(30, 255, 71);
+    display:inline-block;
+    margin: 20px;
+    border-radius: 15px;
+    flex-grow: 0;
+
+  }
+
+  .box2:hover {
+    height: 375px;
+    width: 400px;
+    background-color: rgb(30, 41, 255);
+    display:inline-block;
+    margin: 20px;
+    border-radius: 15px;
+    flex-grow: 2;
+  }
+ 
+  .box3 {
+    height: 575px;
+    width: 500px;
+    background-color: rgb(255, 30, 229);
+    display:inline-block;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  
+ 
+  .box4 {
+    height: 575px;
+    width: 900px;
+    background-color: rgb(255, 251, 30);
+    display:inline-block;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  .box4:hover {
+    height: 575px;
+    width: 300px;
+    background-color: rgb(255, 30, 30);
+    display:inline-block;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  
+  
+  .box5 {
+    height: 575px;
+    width: 400px;
+    background-color: rgb(255, 101, 30);
+    display:inline-block;
+    margin: 20px;
+    border-radius: 15px;
+  }
