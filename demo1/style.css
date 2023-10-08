@@ -7,80 +7,89 @@ body {
   p {
     text-align: center;
     display: block;
-    font-size: 68px;
+    font-size: 18px;
     position: relative;
 
   }
-  
- 
-  
-  .box {
-    height: 175px;
-    width: 100%;
-    background-color: dodgerblue;
-    display:inline-block;
-    margin: 20px;
-    border-radius: 15px;
+
+  h1 {
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    position: relative;
+    margin-left: 30px;
+    transition: transform .2s;
+
   }
 
+
+  h1:hover{
+    text-align: center;
+    display: block;
+    font-size: 100px;
+    position: relative;
+    margin-left: 30px;
+    transform: scale(1);
+    color: blue;
+
+  }
+
+  .container {
+    background-color: rgb(31, 62, 240);
+    display: flex;
+    margin-top: 90px;
+  }
   
-  .box2 {
-    height: 375px;
-    width: 700px;
-    background-color: rgb(30, 255, 71);
-    display:inline-block;
-    margin: 20px;
+  .box {
+    background-color: rgb(30, 248, 255);
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(43, 54, 255);
     border-radius: 15px;
-    flex-grow: 0;
+    margin: 20px;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    color:rgb(30, 248, 255);
+    position: relative;
+  }
+
+
+  .box:hover {
+    background-color: rgb(254, 254, 254);
+    height: 100px;
+    width: 100px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+
+  .container2 {
+    background-color: rgb(31, 62, 240);
+    display: flex;
+  }
+ 
+  .box2 {
+    background-color: rgb(30, 248, 255);
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(43, 54, 255);
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    color:rgb(30, 248, 255);
+    position: relative;
 
   }
 
   .box2:hover {
-    height: 375px;
-    width: 400px;
-    background-color: rgb(30, 41, 255);
-    display:inline-block;
-    margin: 20px;
+    background-color: rgb(254, 254, 254);
+    height: 100px;
+    width: 100px;
+    border: 1px solid lightgrey;
     border-radius: 15px;
-    flex-grow: 2;
-  }
- 
-  .box3 {
-    height: 575px;
-    width: 500px;
-    background-color: rgb(255, 30, 229);
-    display:inline-block;
     margin: 20px;
-    border-radius: 15px;
-  }
-
-  
- 
-  .box4 {
-    height: 575px;
-    width: 900px;
-    background-color: rgb(255, 251, 30);
-    display:inline-block;
-    margin: 20px;
-    border-radius: 15px;
-  }
-
-  .box4:hover {
-    height: 575px;
-    width: 300px;
-    background-color: rgb(255, 30, 30);
-    display:inline-block;
-    margin: 20px;
-    border-radius: 15px;
-  }
-
-  
-  
-  .box5 {
-    height: 575px;
-    width: 400px;
-    background-color: rgb(255, 101, 30);
-    display:inline-block;
-    margin: 20px;
-    border-radius: 15px;
   }
