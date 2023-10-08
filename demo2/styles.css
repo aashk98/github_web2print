@@ -1,0 +1,81 @@
+body{
+    background-image:linear-gradient(red, blue,white);
+    width: 100vw;
+  }
+
+  .introduction {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    position: absolute;
+   top: 140px;
+   left: 160px;
+  }
+  
+  .asterisk {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 508px;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    animation-duration: 5s;
+  animation-name: asterisk;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 50%;
+  }
+
+  @keyframes asterisk{
+    0% {
+      top: 9%;
+      left: 7%;
+      transform: rotate(0deg);
+    }s
+    50% {
+      top: 9%;
+      left: 7%;
+      transform: rotate(360deg);
+    }
+    100% {
+      top: 9%;
+      left:7%;
+      transform: rotate(720deg);
+    }
+  }
+  .copy{
+    text-align: left;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+    position: absolute;
+  left: 700px;
+   top: 120px;
+  }
+
+.image1{
+    visibility: hidden;
+    
+}
+  
+  .copy:hover {
+    text-align: left;
+    color: rgb(34, 255, 9);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 100px;
+    position: absolute;
+    left: 700px;
+    top: 120px;
+    rotate: 30deg;
+}
+
+   .copy:hover + .image1{
+ 
+        visibility: visible;
+        display: block;
+        position: absolute;
+        top:460px;
+        left: 200px;
+
+    }
+  
