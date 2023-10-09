@@ -3,15 +3,88 @@ body{
     width: 100vw;
   }
 
-  .introduction {
-    color: white;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    position: absolute;
-   top: 140px;
-   left: 160px;
+ 
+  .grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 2fr 1fr;
+    grid-template-rows: 200px 200px;
+    row-gap: 10px;
+    column-gap: 15px;
   }
   
+  .box {
+    background-color: rgba(255, 255, 255);
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+    margin: 30px;
+  }
+  
+  .a {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: red;
+  }
+
+  .b{
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: red;
+  }
+
+  .c{
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: red;
+    width: 560px;
+    height: auto;
+  }
+
+  .span3 {
+    width: 20%;
+    height: 20%;
+    display: inline;
+
+  }
+
+  .circle {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    background: white;
+    border-color: blue;
+  }
+  
+  .d{
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: 2;
+    background-color: rgb(183, 0, 255);
+    height: 360px;
+  }
+
+  .e{
+    grid-column-start: 3;
+    grid-column-end: span 5;
+    grid-row-start: 3;
+    grid-row-end: 1;
+    background-color: rgb(246, 244, 244);
+    height:20px;
+  }
+    
+    
+
   .asterisk {
     color: white;
     font-family: 'Varela Round', sans-serif;
@@ -43,39 +116,7 @@ body{
       transform: rotate(720deg);
     }
   }
-  .copy{
-    text-align: left;
-    color: white;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 70px;
-    position: absolute;
-    left: 700px;
-    top: 120px;
-  }
-
-.image1{
-    visibility: hidden;
-    
-}
   
-  .copy:hover {
-    text-align: left;
-    color: rgb(34, 255, 9);
-    font-family: 'Varela Round', sans-serif;
-    font-size: 100px;
-    position: absolute;
-    left: 700px;
-    top: 120px;
-    rotate: 30deg;
-}
 
-   .copy:hover + .image1{
- 
-        visibility: visible;
-        display: block;
-        position: absolute;
-        top:460px;
-        left: 200px;
 
-    }
   
