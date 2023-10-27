@@ -1,0 +1,258 @@
+/* CSS for general styling */
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  color: blue;
+  font-size: 20px;
+}
+
+.grid-container {
+height: 100%;
+width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 100px); /* 10 columns */
+  grid-template-rows: repeat(10, 30px); /* 20 rows */
+  background-color: #f0f0f0;
+  order: 0;
+  z-index: 0;
+}
+
+.grid {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(156, 240, 255);
+  border: 0.75px rgb(30, 45, 255) solid;
+  z-index: 0;
+}
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.b {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.c {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.d {
+  grid-column-start: 4;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.e {
+  grid-column-start: 5;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.f {
+  grid-column-start: 6;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.g {
+  grid-column-start: 7;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.h {
+  grid-column-start: 8;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.i {
+  grid-column-start: 9;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.j {
+  grid-column-start: 10;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.k {
+  grid-column-start: 11;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: 1;
+}
+
+.l {
+  grid-column-start: 12;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: 1;
+}
+
+.m {
+  grid-column-start: 13;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: 1;
+}
+
+.n {
+  grid-column-start: 14;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: 1;
+}
+
+.w{
+  background-color: rgb(224, 248, 250)
+}
+
+.a79{
+  background-color: rgb(224, 248, 250)
+}
+
+.a87{
+  background-color: rgb(224, 248, 250)
+}
+
+.a50{
+  background-color: rgb(224, 248, 250)
+  
+}
+
+.a35{
+  background-color: rgb(224, 248, 250)
+}
+
+.b25{
+  background-color: rgb(224, 248, 250)
+}
+
+.b39{
+  background-color: rgb(224, 248, 250)
+}
+
+.b54{
+  background-color: rgb(224, 248, 250)
+}
+
+.b79{
+  background-color: rgb(224, 248, 250)
+}
+
+.b89{
+  background-color: rgb(224, 248, 250)
+}
+
+.c7{
+  background-color: rgb(224, 248, 250)
+}
+
+.c{
+  background-color: rgb(224, 248, 250)
+}
+
+
+
+/*CUBE */
+
+.cube {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  justify-content: center;
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+  z-index: 1;
+}
+
+.box {
+  width: 50%;
+  height:50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  border-radius: 4px;
+  border-color: black;
+} 
+
+/* Applying styles to each face */
+
+.cell {
+  transform: translateZ(100px);
+  background-color: aliceblue;
+}
+
+.cell2 {
+  transform: rotateY(90deg) translateX(100px);
+  transform-origin: right;
+  background-color: rgb(227, 237, 245);
+}
+
+.cell3 {
+  transform: rotateY(180deg) translateZ(100px);
+  background-color: rgb(57, 232, 255);
+}
+
+.cell4 {
+  transform: rotateY(-90deg) translateX(-100px);
+  transform-origin: left;
+  background-color: rgb(204, 249, 255);
+}
+
+.cell5 {
+  transform: rotateX(-90deg) translateY(-100px);
+  transform-origin: top;
+  background-color: rgb(179, 254, 253);
+}
+
+.cell6 {
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom;
+  background-color: rgb(146, 217, 255);
+}
+
+
+/* Animating the elements */
+
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotateY(90deg) rotateZ(90deg);
+  }
+  40% {
+    transform: rotateY(180deg) rotateZ(-90deg);
+  }
+  60% {
+    transform: rotateY(270deg) rotateZ(90deg);
+  }
+  80% {
+    transform: rotateY(360deg) rotateZ(-90deg);
+  }
+}
