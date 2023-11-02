@@ -1,6 +1,5 @@
 body {
   display: flex;
-  height: 100vh;
   justify-content: right;
   align-items: right;
   font-family: "Roboto Mono", Courier, monospace;
@@ -15,7 +14,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(10, 100px); /* 10 columns */
-  grid-template-rows: repeat(80, 30px); /* 20 rows */
+  grid-template-rows: repeat(80, 30px); /* 80 rows */
   background-color: white;
   z-index: 0;
   position: absolute;
@@ -1813,4 +1812,311 @@ body {
   margin-left: 5px;
   margin-top: 45px;
   z-index: 7;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  body {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-family: "Roboto Mono", Courier, monospace;
+    font-weight: 0;
+    color: rgba(0, 0, 245, 1);
+    font-size: 0px;
+  }
+
+  .a {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgba(0, 0, 245, 1) solid;
+    rotate: 40deg;
+    z-index: 4;
+  }
+
+  .c {
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 90px;
+    width: 90px;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgba(0, 0, 245, 1) solid;
+    rotate: 80deg;
+    z-index: 4;
+  }
+
+  .a29 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgba(0, 0, 245, 1) solid;
+    rotate: 70deg;
+    z-index: 4;
+  }
+  .a32 {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgba(0, 0, 245, 1) solid;
+    rotate: -60deg;
+    z-index: 4;
+  }
+  
+  .b92 {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgba(0, 0, 245, 1) solid;
+    rotate: 40deg;
+    z-index: 4;
+  }
+
+  .c30 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgba(0, 0, 245, 1) solid;
+    rotate: 30deg;
+    z-index: 4;
+  }
+
+  .c19 {
+    grid-column-end: span 1;
+    background-color: white;
+    grid-row-end: span 1;
+    font-size: 30px;
+    height: 76px;
+    width: 270px;
+    padding: 30px;
+    margin: 20px;
+    border: 0px rgba(0, 0, 245, 1) solid;
+  }
+  
+  .d9 {
+    grid-column-end: span 1;
+    background-color: white;
+    grid-row-end: span 1;
+    font-size: 30px;
+    height: 76px;
+    width: 270px;
+    padding: 20px;
+    margin: 20px;
+    border: 0px rgba(0, 0, 245, 1) solid;
+  }
+
+
+  .b29 {
+    font-size: 0px;
+    z-index: 6;
+  }
+  
+  .b30 {
+    font-size: 0px;
+    z-index: 6;
+  }
+
+
+  .a10 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .a36 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .a49 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .b30 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .b47 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .b89 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .b23 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .b58 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .b66 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .a72 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .a77 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .a98 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .c36 {
+    background-color: rgba(117, 251, 253, 1);
+  }
+  
+  .c62 {
+    background-color: rgba(117, 251, 253, 1);
+  }
+  
+  .c67 {
+    background-color: rgba(117, 251, 253, 1);
+  }
+  
+  .c88 {
+    background-color: rgba(117, 251, 253, 1);
+  }
+  
+  .c95 {
+    background-color: rgba(117, 251, 253, 1);
+  }
+  
+  .c98 {
+    background-color: rgba(117, 251, 253, 1);
+  }
+  
+  .b27 {
+    grid-row-end: span 5;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .container2{
+    opacity: 0%;
+  }
+  
+  .container3{
+    opacity: 0%;
+  }
+
+  .container4{
+    opacity: 0%;
+  }
+  
+  .container5{
+    opacity: 0%;
+  }
+
+  .container6{
+    opacity: 0%;
+  }
+
+  .container7{
+    opacity: 0%;
+  }
+
+  .container8{
+    opacity: 0%;
+  }
+
+
+  .container9{
+    opacity: 0%;
+  }
+
+  .container10{
+    opacity: 0%;
+  }
+
+
+  /*CUBE */
+  
+  .cube {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    justify-content: center;
+    transform-style: preserve-3d;
+    animation: rotate 10s linear infinite;
+    z-index: 1;
+    margin-left: 50px;
+    margin-top: 300px;
+  }
+  
+  .side {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border-radius: 4px;
+    border-color: black;
+  } 
+  
+  /* Applying styles to each face */
+  
+  .cell {
+    transform: translateZ(100px);
+    background-color: rgb(255, 255, 255) ;
+    opacity: 30%;
+  }
+  
+  .cell2 {
+    transform: rotateY(90deg) translateX(100px);
+    transform-origin: right;
+    background-color: rgba(117, 251, 253, 1) ;
+    opacity: 50%;
+  }
+  
+  .cell3 {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: rgba(117, 251, 253, 1) ;
+    opacity: 60%;
+  }
+  
+  .cell4 {
+    transform: rotateY(-90deg) translateX(-100px);
+    transform-origin: left;
+    background-color:rgba(117, 251, 253, 1);
+    opacity: 40%;
+  }
+  
+  .cell5 {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top;
+    background-color: rgba(117, 251, 253, 1);
+    opacity: 30%;
+  }
+  
+  .cell6 {
+    transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom;
+    background-color: rgba(117, 251, 253, 1);
+    opacity: 70%;
+  }
+  
+  
+  /* Animating the elements */
+  
+  @keyframes rotate {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotateX(90deg) rotateY(90deg);
+    }
+
+    80% {
+      transform: rotateX(360deg) rotateY(-90deg);
+    }
+  }
 }
