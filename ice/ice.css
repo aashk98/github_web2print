@@ -7,24 +7,24 @@ body {
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   color: blue;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .grid-container {
-height: 100%;
-width: 100%;
+  height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 100px); /* 10 columns */
-  grid-template-rows: repeat(10, 30px); /* 20 rows */
-  background-color: #f0f0f0;
-  order: 0;
+  grid-template-columns: repeat(10, 100px); /* 10 columns */
+  grid-template-rows: repeat(80, 30px); /* 20 rows */
+  background-color: white;
   z-index: 0;
+  position: absolute;
 }
 
 .grid {
   padding: 5px;
   text-align: center;
-  background-color: rgb(156, 240, 255);
+  background-color: rgb(255, 255, 255);
   border: 0.75px rgb(30, 45, 255) solid;
   z-index: 0;
 }
@@ -77,6 +77,7 @@ width: 100%;
   grid-row-start: 1;
   grid-row-end: 1;
 }
+
 .h {
   grid-column-start: 8;
   grid-column-end: span 1;
@@ -126,54 +127,146 @@ width: 100%;
 }
 
 .w{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .a79{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .a87{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .a50{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
   
 }
 
 .a35{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .b25{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .b39{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .b54{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .b79{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .b89{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .c7{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
 .c{
-  background-color: rgb(224, 248, 250)
+  background-color: rgba(117, 251, 253, 1)
 }
 
+.e5{
+  background-color: rgba(117, 251, 253, 1)
+}
+
+.e25{
+  background-color: rgba(117, 251, 253, 1)
+}
+
+c36 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.c62 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.c67 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.c88 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.c95 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.c98 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.d3 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.d15 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.d17 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.d30 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.d77 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.b50 {
+  background-color: rgba(117, 251, 253, 1);
+  font-size: 30px;
+}
+
+.d71 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.d74 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.e74 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.e17 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.e77 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.f34 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.g34 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.g37 {
+  background-color: rgba(117, 251, 253, 1);
+}
+
+.g41 {
+  background-color: rgba(117, 251, 253, 1);
+}
 
 
 /*CUBE */
@@ -186,6 +279,8 @@ width: 100%;
   transform-style: preserve-3d;
   animation: rotate 10s linear infinite;
   z-index: 1;
+  margin-left: 50px;
+  margin-top: 200px;
 }
 
 .box {
@@ -203,36 +298,42 @@ width: 100%;
 
 .cell {
   transform: translateZ(100px);
-  background-color: aliceblue;
+  background-color: rgba(117, 251, 253, 1);
+  opacity: 0%;
 }
 
 .cell2 {
   transform: rotateY(90deg) translateX(100px);
   transform-origin: right;
-  background-color: rgb(227, 237, 245);
+  background-color: rgba(117, 251, 253, 1);
+  opacity: 70%;
 }
 
 .cell3 {
   transform: rotateY(180deg) translateZ(100px);
-  background-color: rgb(57, 232, 255);
+  background-color: rgb(41, 214, 216);
+  opacity: 30%;
 }
 
 .cell4 {
   transform: rotateY(-90deg) translateX(-100px);
   transform-origin: left;
-  background-color: rgb(204, 249, 255);
+  background-color: rgb(87, 234, 234);
+  opacity: 70%;
 }
 
 .cell5 {
   transform: rotateX(-90deg) translateY(-100px);
   transform-origin: top;
-  background-color: rgb(179, 254, 253);
+  background-color: rgb(134, 232, 235);
+  opacity: 80%;
 }
 
 .cell6 {
   transform: rotateX(90deg) translateY(100px);
   transform-origin: bottom;
-  background-color: rgb(146, 217, 255);
+  background-color: rgb(30, 185, 191);
+  opacity: 70%;
 }
 
 
@@ -247,12 +348,20 @@ width: 100%;
     transform: rotateY(90deg) rotateZ(90deg);
   }
   40% {
-    transform: rotateY(180deg) rotateZ(-90deg);
+    transform: rotateY(180deg) rotateY(-90deg);
   }
   60% {
-    transform: rotateY(270deg) rotateZ(90deg);
+    transform: rotateY(270deg) rotateX(90deg);
   }
   80% {
-    transform: rotateY(360deg) rotateZ(-90deg);
+    transform: rotateY(360deg) rotateY(-90deg);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+  .cube {
+    width: 80%; /* Reduce the width for smaller screens */
+    margin-top: 5%; /* Adjust the margin as needed */
   }
 }
